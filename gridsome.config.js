@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Minimal Blog Starter',
-  siteUrl: 'https://gridsome-starter-minimal-blog.netlify.com/',
-  siteDescription: 'A minimalist blog built with Gridsome',
+  siteName: 'R3N3.XYZ',
+  siteUrl: 'https://r3n3.xyz/',
+  siteDescription: 'R3N3.XYZ',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -17,16 +17,16 @@ module.exports = {
         route: '/:title',
         remark: {
           plugins: [
-            ['@gridsome/remark-prismjs', {transformInlineCode: true}]
-          ]
-        }
-      }
+            ['@gridsome/remark-prismjs', { transformInlineCode: true }],
+          ],
+        },
+      },
     },
     {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000, // default
-      }
+      },
     },
     {
       use: 'gridsome-plugin-feed',
@@ -34,19 +34,19 @@ module.exports = {
         contentTypes: ['Post'],
         feedOptions: {
           title: 'A Gridsome Minimal Blog',
-          description: 'Best blog feed evah.'
+          description: 'Best blog feed evah.',
         },
         rss: {
           enabled: true,
-          output: '/feed.xml'
+          output: '/feed.xml',
         },
         atom: {
           enabled: false,
-          output: '/feed.atom'
+          output: '/feed.atom',
         },
         json: {
           enabled: false,
-          output: '/feed.json'
+          output: '/feed.json',
         },
         maxItems: 25,
         htmlFields: ['description', 'content'],
@@ -55,9 +55,9 @@ module.exports = {
         nodeToFeedItem: (node) => ({
           title: node.title,
           date: node.date || node.fields.date,
-          content: node.content
-        })
-      }
-    }
-  ]
-}
+          content: node.content,
+        }),
+      },
+    },
+  ],
+};
