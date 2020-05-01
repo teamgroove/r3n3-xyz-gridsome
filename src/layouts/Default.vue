@@ -61,7 +61,7 @@
     </article>
 
     <div id="penrose-triangle-cube">
-      <h3>R3N3.XYZ / DEVELOP</h3>
+      <h3>R3N3.XYZ / DEVELOP / Yo!</h3>
       <div></div>
     </div>
 
