@@ -33,8 +33,8 @@ module.exports = {
       options: {
         contentTypes: ['Post'],
         feedOptions: {
-          title: 'A Gridsome Minimal Blog',
-          description: 'Best blog feed evah.',
+          title: 'r3n3.xyz',
+          description: '',
         },
         rss: {
           enabled: true,
